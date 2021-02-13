@@ -1,0 +1,114 @@
+a:link, a:visited {
+	text-decoration: none
+
+	}
+a:hover {
+	color: white;
+	text-decoration: nonebody{background-color: black;}
+
+	}
+a:active {
+	text-decoration: none
+	color: white
+	
+	}
+
+body{background-color: black }
+/*Textos*/
+#teste{
+	top: 82%;
+	left: 10%;
+}
+/*Imagens*/
+#figura1_pagode{
+	position: fixed;
+	top: 18%;
+	left: 10%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+
+}
+#figura2_rock{
+	position: fixed;
+	top: 18%;
+	left: 35%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
+#figura3_jazz{
+	position: fixed;
+	top: 18%;
+	left: 60%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
+#figura4_gospel{
+	position: fixed;
+	top: 52%;
+	left: 10%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
+#figura5_funk{
+	position: fixed;
+	top: 52%;
+	left: 35%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
+#figura6_forro{
+	position: fixed;
+	top: 52%;
+	left: 60%;
+	width: 10%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
+/*Botões*/
+#botao1_pagode{
+	position: fixed;
+	top: 34.5%;
+	left: 19.8%;
+	background-repeat: repeat-x;
+}
+#botao2_rock{
+	position: fixed;
+	top: 34.5%;
+	left: 44.8%;
+	background-repeat: repeat-x;
+}
+#botao3_jazz{
+	position: fixed;
+	top: 34.5%;
+	left: 69.8%;
+	background-repeat: repeat-x;
+}
+#botao4_gospel{
+	position: fixed;
+	top: 68.5%;
+	left: 19.8%;
+	background-repeat: repeat-x;
+}
+#botao5_funk{
+	position: fixed;
+	top: 68.5%;
+	left: 44.8%;
+	background-repeat: repeat-x;
+}
+#botao6_forro{
+	position: fixed;
+	top: 68.5%;
+	left: 69.8%;
+	background-repeat: repeat-x;
+}
+#botao_resultado{
+	position: fixed;
+	top: 80%;
+	left: 68%;
+	background-repeat: repeat-x;
+}

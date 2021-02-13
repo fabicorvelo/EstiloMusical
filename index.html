@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Meu estilo  </title>
+    <meta   charset="utf-8">
+    <link   rel="stylesheet" type="text/css" href="configuraimagens.css">
+    <style type="text/css">
+
+            p{
+              top: 23%;
+              color: black;
+              font-size: 35px;
+              font-family: fantasy;
+              color:#2F4F2F;
+              text-transform: uppercase;
+            }
+            .button {
+              padding: 2px 20px;
+              font-size: 24px;
+              text-align: center;
+              cursor: pointer;
+              outline: none;
+              color: #fff;
+              background-color: green;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            .button:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .button:hover {background-color: black}
+
+            .button:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+
+            /*Botão resultado*/
+            .btn{
+              border: none;
+              color: white;
+              padding: 14px 28px;
+              font-size: 16px;
+              cursor: pointer;
+            }
+
+            .danger {background-color: #f44336;} /* Red */
+            .danger:hover {background: #da190b;}
+
+            .default {background-color: #e7e7e7; color: black;} /* Gray */
+            .default:hover {background: #ddd;}
+
+      </style>
+  </head>
+  <body background="imagens/fundo3.gif" >
+
+      <!-Textos ->
+      <p  align= "center" ><font face = "fantasy"color = "white"><b>Qual seu estilo musical?</b></font></p>
+
+      <!-Imagens de tipos de música  ->
+      <div id="figura1_pagode" > <img src= "imagens/pagode.jpg" height="160%" width="170%" border="6" style="border-color: white"> </div>
+      <div id="figura2_rock">    <img src= "imagens/rock.jpg"   height="160%" width="170%" border="6" style="border-color: white"> </div>
+      <div id="figura3_jazz">    <img src= "imagens/jazz.jpeg"  height="160%" width="170%" border="6" style="border-color: white"> </div>
+      <div id="figura4_gospel">  <img src= "imagens/gospel.jpg" height="160%" width="170%" border="6" style="border-color: white"> </div>
+      <div id="figura5_funk">    <img src= "imagens/funk.jpg"   height="160%" width="170%" border="6" style="border-color: white"> </div>
+      <div id="figura6_forro">   <img src= "imagens/forro.jpg"  height="160%" width="170%" border="6" style="border-color: white"> </div>
+
+      <!-Botões de votar  ->
+      <div id="botao1_pagode" onclick="voto_pagode()">  <button class="button">Votar</button></div>
+      <div id="botao2_rock"   onclick="voto_rock()">  <button class="button">Votar</button></div>
+      <div id="botao3_jazz"   onclick="voto_jazz()">  <button class="button">Votar</button></div>
+      <div id="botao4_gospel" onclick="voto_gospel()">  <button class="button">Votar</button></div>
+      <div id="botao5_funk"   onclick="voto_funk()">  <button class="button">Votar</button></div>
+      <div id="botao6_forro"  onclick="voto_forro()">  <button class="button">Votar</button></div>
+
+      <!-Botão de resultado  ->
+      <div id="botao_resultado"  onclick="vencedor()"> <button class="button"> Resultado</button></div>
+
+      <!-Funções  ->
+      <script>
+
+      var pagode = 0;
+      var rock = 0;
+      var jazz = 0;
+      var gospel = 0;
+      var funk = 0;
+      var forro = 0;
+      var resultado=0 ;
+
+      /*Coleta votos*/
+      function voto_pagode() {
+           pagode++;
+           document.getElementById("pagode").innerHTML = pagode;
+
+       }
+      function voto_rock() {
+           rock++;
+           document.getElementById("rock").innerHTML = rock;
+
+       }
+      function voto_jazz() {
+           jazz++;
+           document.getElementById("jazz").innerHTML = jazz;
+
+       }
+      function voto_gospel() {
+           gospel++;
+           document.getElementById("gospel").innerHTML = gospel;
+
+       }
+      function voto_funk() {
+           funk++;
+           document.getElementById("funk").innerHTML = funk;
+
+       }
+      function voto_forro() {
+           forro++;
+           document.getElementById("forro").innerHTML = forro;
+
+       }
+      function vencedor(){
+
+        document.getElementById("pagode").innerHTML = pagode;
+         document.getElementById("rock").innerHTML = rock;
+         document.getElementById("jazz").innerHTML = jazz;
+         document.getElementById("gospel").innerHTML = gospel;
+         document.getElementById("funk").innerHTML = funk;
+         document.getElementById("forro").innerHTML = forro;
+
+         if((pagode > rock)&&(pagode > jazz)&&(pagode > gospel)&&(pagode > funk)&&(pagode > forro)){
+            alert("O grande vencedor foi o pagodinho!");
+
+         } if((rock > pagode)&&(rock > jazz)&&(rock > gospel)&&(rock > funk)&&(rock > forro)){
+             alert("O grande vencedor foi ROCK IN ROLL /o/!");
+
+
+         }if((jazz > pagode)&&(jazz > rock)&&(jazz > gospel)&&(jazz > funk)&&(jazz > forro)){
+             alert("O grande vencedor foi jazz *-*!");
+
+
+         }if((gospel > pagode)&&(gospel > rock)&&(gospel > jazz)&&(gospel > funk)&&(gospel > forro)){
+             alert("O grande vencedor foi gospel *-*!");
+
+
+         }if((funk > pagode)&&(funk > jazz)&&(funk > gospel)&&(funk > rock)&&(funk > forro)){
+             alert("O grande vencedor foi funk *-*!");
+
+
+         }if((forro > pagode)&&(forro > jazz)&&(forro > gospel)&&(forro > funk)&&(forro > rock)){
+             alert("O grande vencedor foi forro*-*!");
+
+
+         }
+      }
+
+
+
+
+</script>
+
+
+      <div id="pagode" ></div>
+      <div id="rock" ></div>
+      <div id="jazz" ></div>
+      <div id="gospel" ></div>
+      <div id="funk" ></div>
+      <div id="forro" ></div>
+      <div id="resultado" ></div>
+
+
+   </body>
+</html>

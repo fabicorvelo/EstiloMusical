@@ -1,0 +1,14 @@
+body
+{
+	background: black;
+}
+
+#figura1-pagode
+{
+	position: fixed;
+	top: 102%;
+	left: 50px;
+	width: 9%;
+	height: 14%;
+	background-repeat: repeat-x;
+}
